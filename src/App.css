@@ -44,7 +44,7 @@ body {
 }
 .res-big-card :hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 .res-logo {
   width: 100%;
@@ -58,4 +58,8 @@ body {
 }
 .res-card > h3 {
   font-size: 10px;
+}
+.filter-btn{
+  margin: 2vw;
+  cursor: pointer;
 }
