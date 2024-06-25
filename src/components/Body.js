@@ -1,9 +1,8 @@
 import RestaurantCard from "./RestaurantCard";
-import resList from "../Utils/mockData";
 import { useEffect, useState } from "react";
 
 const Body = () => {
-  const [ListOfRestaurant, setListOfRestaurant] = useState(resList);
+  const [ListOfRestaurant, setListOfRestaurant] = useState([]);
 
   useEffect(() => {
     fetchData();
@@ -17,7 +16,7 @@ const Body = () => {
     const json = await data.json();
 
     console.log(json);
-    setListOfRestaurant(json?.data?.cards[2]?.data?.data?.cards);
+    setListOfRestaurant(json?.data?.cards);
   };
 
   return (
@@ -39,7 +38,7 @@ const Body = () => {
       </div>
       <div className="res-container">
         {ListOfRestaurant.map((restaurant) => (
-          <RestaurantCard key={restaurant.info.id} resData={restaurant} />
+          <RestaurantCard key={restaurant?.info.id} resData={restaurant} />
         ))}
       </div>
     </div>
