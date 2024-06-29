@@ -63,3 +63,13 @@ body {
   margin: 2vw;
   cursor: pointer;
 }
+.shimmer-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.shimmer-card{
+  height: 20vw;
+  width: 15vw;
+  margin: 2.5vw;
+  background-color: #e2e2e2;
+}
