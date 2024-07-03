@@ -6,7 +6,8 @@ const Error = () => {
     console.log(err);
   return (
     <div>
-      <h1>oooops! get away!</h1>
+      <h1>ooops! get away!</h1>
+      <h2>{err.status}: {err.statusText}</h2>
     </div>
   );
 };

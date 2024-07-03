@@ -16,6 +16,7 @@ const App = () => {
     </div>
   );
 };
+
 const AppRouter = createBrowserRouter([
   {
     path: "/",
@@ -32,6 +33,8 @@ const AppRouter = createBrowserRouter([
   },
 ])
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<RouterProvider router={AppRouter} />);
-export default App;
+const AppWithRouter = () => {
+  return <RouterProvider router={AppRouter} />;
+};
+
+export default AppWithRouter;
