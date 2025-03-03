@@ -12,6 +12,7 @@ const App = () => {
   return (
     <div className="app">
       <Header />
+
       <Outlet />
     </div>
   );
